@@ -3,11 +3,13 @@
 extern Token_stream ts;
 extern map<string,double> table;
 
-double expr(bool get) // add and subtract
+double expr(bool get)
 {
     double left = term(get);
-    for (;;) { // ‘‘forever’’
-        switch (ts.current().kind) {
+    for (;;)
+    {
+        switch (ts.current().kind)
+        {
             case Kind::plus:
                 left += term(true);
                 break;
@@ -20,7 +22,7 @@ double expr(bool get) // add and subtract
     }
 }
 
-double term(bool get) // multiply and divide
+double term(bool get)
 {
     double left = prim(get);
     for (;;)
@@ -43,12 +45,12 @@ double term(bool get) // multiply and divide
     }
 }
 
-double prim(bool get) // handle primar ies
+double prim(bool get)
 {
-    if (get) ts.get(); // read next token
+    if (get) ts.get();
     switch (ts.current().kind)
     {
-        case Kind::number: // floating-point constant
+        case Kind::number:
         {
             double v = ts.current().number_value;
             ts.get();
@@ -56,17 +58,17 @@ double prim(bool get) // handle primar ies
         }
         case Kind::name:
         {
-            double& v = table[ts.current().string_value]; // find the corresponding
-            if (ts.get().kind == Kind::assign) v = expr(true); // ’=’ seen: assignment
+            double& v = table[ts.current().string_value];
+            if (ts.get().kind == Kind::assign) v = expr(true);
             return v;
         }
-        case Kind::minus: // unar y minus
+        case Kind::minus:
             return -prim(true);
         case Kind::lp:
         {
             auto e = expr(true);
             if (ts.current().kind != Kind::rp) return error("')' expected");
-            ts.get(); // eat ’)’
+            ts.get();
             return e;
         }
         default:

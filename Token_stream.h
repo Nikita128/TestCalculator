@@ -4,9 +4,9 @@
 #include <iostream>
 #include "Token.h"
 #include "Calculation.h"
-#include <string> // strings
-#include <map> // map
-#include <cctype> // isalpha(), etc.
+#include <string>
+#include <map>
+#include <cctype>
 
 using namespace std;
 

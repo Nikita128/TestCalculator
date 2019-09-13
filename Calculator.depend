@@ -1,21 +1,15 @@
 # depslib dependency file v1.0
-1568391573 source:/home/nikita/Projects/Calculator/TestCalculator/main.cpp
+1568393497 source:/home/nikita/Projects/Calculator/TestCalculator/main.cpp
 	<sstream>
 	<iostream>
 	<map>
 	"Calculation.h"
 	"Token_stream.h"
 
-1568391573 source:/home/nikita/Projects/Calculator/TestCalculator/Calculation.cpp
-	<iostream>
-	<string>
-	<map>
-	<cctype>
+1568393497 source:/home/nikita/Projects/Calculator/TestCalculator/Calculation.cpp
 	"Calculation.h"
-	"Token_stream.h"
-	"Token.h"
 
-1568392003 /home/nikita/Projects/Calculator/TestCalculator/Calculation.h
+1568393497 /home/nikita/Projects/Calculator/TestCalculator/Calculation.h
 	<iostream>
 	<string>
 	<map>
@@ -23,7 +17,7 @@
 	"Token_stream.h"
 	"Token.h"
 
-1568391960 /home/nikita/Projects/Calculator/TestCalculator/Token_stream.h
+1568393497 /home/nikita/Projects/Calculator/TestCalculator/Token_stream.h
 	<iostream>
 	"Token.h"
 	"Calculation.h"
@@ -34,6 +28,6 @@
 1568391605 /home/nikita/Projects/Calculator/TestCalculator/Token.h
 	<string>
 
-1568391960 source:/home/nikita/Projects/Calculator/TestCalculator/Token_stream.cpp
+1568393497 source:/home/nikita/Projects/Calculator/TestCalculator/Token_stream.cpp
 	"Token_stream.h"
 

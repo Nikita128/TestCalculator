@@ -1,10 +1,10 @@
 #ifndef CALCULATION_H_INCLUDED
 #define CALCULATION_H_INCLUDED
 
-#include <iostream> // I/O
-#include <string> // strings
-#include <map> // map
-#include <cctype> // isalpha(), etc.
+#include <iostream>
+#include <string>
+#include <map>
+#include <cctype>
 #include "Token_stream.h"
 #include "Token.h"
 

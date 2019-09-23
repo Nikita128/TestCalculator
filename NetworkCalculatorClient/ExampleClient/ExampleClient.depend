@@ -5,3 +5,9 @@
 	<iostream>
 	<boost/asio.hpp>
 
+1569248952 source:/home/nikita/Projects/Calculator/TestCalculator/NetworkCalculatorClient/ExampleClient/main.cpp
+	<cstdlib>
+	<cstring>
+	<iostream>
+	<boost/asio.hpp>
+

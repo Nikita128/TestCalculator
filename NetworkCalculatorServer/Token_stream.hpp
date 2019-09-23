@@ -26,13 +26,12 @@ namespace Calculation
         Token& current() { return ct; };
         void set_input(istream& s) { close(); ip = &s; owns = false; }
         void set_input(istream* p) { close(); ip = p; owns = true; }
-        void clear() {ip->clear();}
-        istream* ip;  //Простите
 
     private:
 
         void close() { if (owns) delete ip; ip = nullptr; }
 
+        istream* ip;
         bool owns;
         Token ct { Kind::end };
     };

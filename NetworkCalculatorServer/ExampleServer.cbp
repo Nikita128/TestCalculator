@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Calculation.cpp" />
 		<Unit filename="Calculation.hpp" />
+		<Unit filename="Server.cpp" />
+		<Unit filename="Server.hpp" />
 		<Unit filename="Token.hpp" />
 		<Unit filename="Token_stream.cpp" />
 		<Unit filename="Token_stream.hpp" />

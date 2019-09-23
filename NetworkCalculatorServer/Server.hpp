@@ -58,8 +58,8 @@ private:
     map<string, short> command_dictionary {};
     Progress_type progress { Progress_type::logout };
     string current_login {};
-    Calculation::Token_stream token_stream{};
-    Calculation::Calculator calculator{};
+    Calculation::Token_stream token_stream {};
+    Calculation::Calculator calculator {};
 };
 
 #endif // SERVER_HPP_INCLUDED

@@ -44,8 +44,8 @@ public:
 
 private:
     void do_read();
-
     void do_write(std::size_t length);
+
     string process_response();
     bool check_login(string login);
     bool check_password(string login, string password);
@@ -54,7 +54,6 @@ private:
     enum { max_length = 1024 };
     char data_[max_length];
     string str_data {};
-    stringstream sstr;
 
     map<string, short> command_dictionary {};
     Progress_type progress { Progress_type::logout };

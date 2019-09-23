@@ -23,7 +23,6 @@ namespace Calculation
         map<string,double> table;
 
         void set_token_stream(Token_stream& s) { ts = &s; }
-        //void calculate();
         string calculate();
 
     private:
@@ -38,4 +37,4 @@ namespace Calculation
     double error(const string& s);
 }
 
-#endif // CALCULATION_H_INCLUDED
+#endif // CALCULATION_HPP_INCLUDED

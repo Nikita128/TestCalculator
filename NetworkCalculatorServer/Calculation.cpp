@@ -93,19 +93,6 @@ double Calculator::prim(bool get)
     }
 }
 
-//void Calculator::calculate()
-//{
-//    if (ts == nullptr)
-//        return;
-//    for (;;)
-//    {
-//        ts->get();
-//        if (ts->current().kind == Kind::end) break;
-//        if (ts->current().kind == Kind::print) continue;
-//        cout << expr(false) << '\n';
-//    }
-//}
-
 string Calculator::calculate()
 {
     if (ts == nullptr)

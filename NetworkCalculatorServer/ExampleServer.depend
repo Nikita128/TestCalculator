@@ -51,3 +51,27 @@
 1569182313 source:/home/nikita/Projects/TestClientServer/exampleServer/ExampleServer/Server.cpp
 	"Server.hpp"
 
+1569177370 source:/home/nikita/Projects/Calculator/TestCalculator/NetworkCalculatorServer/Token_stream.cpp
+	"Token_stream.hpp"
+
+1569217997 /home/nikita/Projects/Calculator/TestCalculator/NetworkCalculatorServer/Token_stream.hpp
+	"Token.hpp"
+	"Calculation.hpp"
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+
+1569217997 /home/nikita/Projects/Calculator/TestCalculator/NetworkCalculatorServer/Token.hpp
+	<string>
+
+1569217997 /home/nikita/Projects/Calculator/TestCalculator/NetworkCalculatorServer/Calculation.hpp
+	"Token.hpp"
+	"Token_stream.hpp"
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+	<cmath>
+	<sstream>
+

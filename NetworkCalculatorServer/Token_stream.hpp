@@ -27,16 +27,15 @@ namespace Calculation
         void set_input(istream& s) { close(); ip = &s; owns = false; }
         void set_input(istream* p) { close(); ip = p; owns = true; }
         void clear() {ip->clear();}
-        istream* ip;
+        istream* ip;  //Простите
 
     private:
 
         void close() { if (owns) delete ip; ip = nullptr; }
-
 
         bool owns;
         Token ct { Kind::end };
     };
 }
 
-#endif // TOKEN_STREAM_H_INCLUDED
+#endif // TOKEN_STREAM_HPP_INCLUDED

@@ -1,5 +1,5 @@
-#ifndef TOKEN_H_INCLUDED
-#define TOKEN_H_INCLUDED
+#ifndef TOKEN_HPP_INCLUDED
+#define TOKEN_HPP_INCLUDED
 
 #include <string>
 
@@ -21,4 +21,4 @@ namespace Calculation
     };
 }
 
-#endif // TOKEN_H_INCLUDED
+#endif // TOKEN_HPP_INCLUDED

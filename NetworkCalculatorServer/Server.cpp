@@ -131,7 +131,6 @@ string Session::process_response()
             break;
 
         case 4:
-            cerr << "logiut case ";
             if (progress != Progress_type::logout)
                 response = "logout";
 
